@@ -7,7 +7,7 @@
 You must have PHP 7 or above installed.
 For Arcade, Must have PDO and PDOSQLITE php extensions on
 
-##Dependences
+## Dependences
 mame.dat (https://github.com/iytt/mame.dat)
 Included in this repository, don't worry :))
 

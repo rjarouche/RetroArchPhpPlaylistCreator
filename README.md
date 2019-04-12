@@ -5,6 +5,11 @@
 ## Installation
 
 You must have PHP 7 or above installed.
+For Arcade, Must have PDO and PDOSQLITE php extensions on
+
+##Dependences
+mame.dat (https://github.com/iytt/mame.dat)
+Included in this repository, don't worry :))
 
 ## Usage
 
@@ -12,10 +17,12 @@ Edit these lines:
 
 ```PHP
 /* Config Here */
-$initial_dir = __DIR__ . DIRECTORY_SEPARATOR; //directory that will scan
-$playlist_name = "LISTNAME.lpl"; //playlistname
-$db_name = "Sony - PlayStation.lpl"; //Dbname
-$allowed = array("bin","cue"); //include extensions that you want to put in your playlist
+$initial_dir = __DIR__ . DIRECTORY_SEPARATOR;
+$playlist_name = "PSX.lpl"; //Playlist name
+$db_name = "PSX.lpl"; //Database to serch the images
+$allowed = array("pbp","bin"); //Add all of extensions that you want o put in playlist, is case sensitive
+$is_arcade = FALSE; //Set TRUE if the playlist is for arcade YOU MUST HAVE THE mame.sqlite in the same folder
+$jump_bios = TRUE; //Jump BIOS files, works only for arcade
 /*END CONFIG */
 ```
 ## Run
